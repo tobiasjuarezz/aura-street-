@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA STREET — Ropa oversize Zona Sur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="nav-left">
+      <button class="hamburger" id="openMenu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#cat-camisetas">Camisetas</a>
+        <a href="#cat-jeans">Jeans y bermudas</a>
+        <a href="#cat-sets">Sets</a>
+        <a href="#como-comprar">Cómo comprar</a>
+      </nav>
+    </div>
+    <div class="logo">AURA <span>STREET</span></div>
+    <button class="cart-btn" id="openCart">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<div class="overlay" id="menuOverlay"></div>
+<div class="side-menu" id="sideMenu">
+  <div class="side-menu-head">
+    <span class="mono" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--acento-oscuro);">Menú</span>
+    <button class="close-btn" id="closeMenu">✕</button>
+  </div>
+  <nav class="side-menu-links">
+    <a href="#catalogo" class="side-link-main">Ver todo el catálogo</a>
+    <a href="#cat-camisetas">Camisetas retro</a>
+    <a href="#cat-jeans">Jeans y bermudas</a>
+    <a href="#cat-sets">Sets</a>
+    <a href="#como-comprar">Cómo comprar</a>
+    <a href="#contacto">Envíos y contacto</a>
+    <a href="https://instagram.com/auratreet" target="_blank" rel="noopener">Instagram @auratreet ↗</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-tag mono">Zona Sur · Buenos Aires</span>
+    <h1>Oversize<br>hecho para <em>la calle</em></h1>
+    <p>Ropa urbana pensada para el día a día del conurbano. Pedís por WhatsApp, coordinamos y te lo acercamos a la estación o a tu casa.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('catalogo').scrollIntoView()">Ver catálogo</button>
+      <button class="btn-ghost" onclick="document.getElementById('como-comprar').scrollIntoView()">Cómo comprar</button>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="como-comprar">
+  <div class="wrap">
+    <h2>Cómo comprar</h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <span class="num mono">01</span>
+        <h3>Elegís tu talle</h3>
+        <p>Mirás el catálogo, elegís la prenda y el talle en la misma tarjeta del producto.</p>
+      </div>
+      <div class="how-step">
+        <span class="num mono">02</span>
+        <h3>Pedís por WhatsApp</h3>
+        <p>Sumás todo al carrito y con un toque se arma el mensaje con tu pedido, listo para enviar.</p>
+      </div>
+      <div class="how-step">
+        <span class="num mono">03</span>
+        <h3>Coordinamos la entrega</h3>
+        <p>Confirmamos forma de pago y punto de encuentro por chat.</p>
+      </div>
+    </div>
+    <div class="delivery-note">
+      📍 Entregas viernes y sábados en estaciones de tren: Monte Grande, Luis Guillón, Llavallol, Canning, Ezeiza y Lomas de Zamora (punto exacto por DM) — también a domicilio, transporte a cargo del cliente.
+    </div>
+  </div>
+</section>
+
+<section class="catalogo" id="catalogo">
+  <div class="wrap">
+    <div class="cat-head">
+      <div>
+        <h2>Catálogo</h2>
+        <p>Stock limitado — se renueva por drops. Elegí talle y sumá al carrito.</p>
+      </div>
+    </div>
+
+    <div class="cat-section" id="cat-camisetas">
+      <div class="cat-section-title">
+        <h3>Camisetas retro</h3>
+        <span class="count mono" id="count-camisetas"></span>
+      </div>
+      <div class="grid" id="grid-camisetas"></div>
+    </div>
+
+    <div class="cat-section" id="cat-jeans">
+      <div class="cat-section-title">
+        <h3>Jeans y bermudas</h3>
+        <span class="count mono" id="count-jeans"></span>
+      </div>
+      <div class="grid" id="grid-jeans"></div>
+    </div>
+
+    <div class="cat-section" id="cat-sets">
+      <div class="cat-section-title">
+        <h3>Sets</h3>
+        <span class="count mono" id="count-sets"></span>
+      </div>
+      <div class="grid" id="grid-sets"></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="foot-accordion">
+      <details open>
+        <summary>Categorías</summary>
+        <div class="acc-body">
+          <a href="#cat-camisetas">Camisetas retro</a>
+          <a href="#cat-jeans">Jeans y bermudas</a>
+          <a href="#cat-sets">Sets</a>
+        </div>
+      </details>
+      <details>
+        <summary>Envíos</summary>
+        <div class="acc-body">
+          <p>Viernes y sábados en estaciones de tren: Monte Grande, Luis Guillón, Llavallol, Canning, Ezeiza y Lomas de Zamora.</p>
+          <p>También a domicilio, transporte a cargo del cliente.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Cambios y compra</summary>
+        <div class="acc-body">
+          <p>Seña de $5.000 que se descuenta del total.</p>
+          <p>Cambios solo por falla — no por talle, por eso hay guía de talles antes de pedir.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Contacto</summary>
+        <div class="acc-body">
+          <a href="https://instagram.com/auratreet" target="_blank" rel="noopener">📷 Instagram @auratreet</a>
+          <p>Pedidos y consultas por WhatsApp</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="foot-social">
+      <a href="https://instagram.com/auratreet" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+      </a>
+    </div>
+    <div class="copy">AURA STREET — Monte Grande, Buenos Aires</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Tu carrito</h3>
+    <button class="close-btn" id="closeCart">✕</button>
+  </div>
+  <div class="drawer-body" id="cartBody">
+    <p class="empty-cart">Todavía no agregaste nada.</p>
+  </div>
+  <div class="drawer-foot">
+    <div class="total-row"><span>Precio</span><span id="cartTotal" class="mono">—</span></div>
+    <button class="wa-btn" id="waBtn" disabled>💬 Cotizar por WhatsApp</button>
+  </div>
+</div>
+
+<script src="js/tienda.js"></script>
+
+</body>
+</html>
