@@ -11,7 +11,8 @@ const products = [
   { id: 7, name: "Jean Oversize Celeste/Lila Claro", cat: "Jeans y bermudas", img: "IMG_CELESTE", sizes: ["S","M","L","XL"] },
   { id: 8, name: "Jean Oversize Gris Desgastado", cat: "Jeans y bermudas", img: "IMG_GRIS", sizes: ["S","M","L","XL"] },
   { id: 9, name: "Bermuda Denim Clara", cat: "Jeans y bermudas", img: "IMG_BERMUDA", sizes: ["S","M","L","XL"] },
-  { id: 10, name: "Set Floral SDA Club (remera + short)", cat: "Sets", img: "IMG_FLORAL", sizes: ["S","M","L","XL"] }
+  { id: 10, name: "Set Floral SDA Club (remera + short)", cat: "Sets", img: "IMG_FLORAL", sizes: ["S","M","L","XL"] },
+  { id: 11, name: "Buzo Medio Cierre Gris", cat: "Buzos", img: "IMG_BUZOGRIS", sizes: ["S","M","L","XL"] }
 ];
 
 const IMAGES = {
@@ -25,6 +26,7 @@ const IMAGES = {
   IMG_GRIS: "images/jean-gris.jpg",
   IMG_BERMUDA: "images/bermuda-denim.jpg",
   IMG_FLORAL: "images/set-floral.jpg",
+  IMG_BUZOGRIS: "images/buzo-medio-cierre.jpg",
 };
 
 let cart = [];
@@ -32,12 +34,14 @@ let cart = [];
 const catGridMap = {
   "Camisetas retro": "grid-camisetas",
   "Jeans y bermudas": "grid-jeans",
-  "Sets": "grid-sets"
+  "Sets": "grid-sets",
+  "Buzos": "grid-buzos"
 };
 const catCountMap = {
   "Camisetas retro": "count-camisetas",
   "Jeans y bermudas": "count-jeans",
-  "Sets": "count-sets"
+  "Sets": "count-sets",
+  "Buzos": "count-buzos"
 };
 const catCounts = {};
 
