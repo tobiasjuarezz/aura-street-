@@ -12,7 +12,13 @@ const products = [
   { id: 8, name: "Jean Oversize Gris Desgastado", cat: "Jeans y bermudas", img: "IMG_GRIS", sizes: ["S","M","L","XL"] },
   { id: 9, name: "Bermuda Denim Clara", cat: "Jeans y bermudas", img: "IMG_BERMUDA", sizes: ["S","M","L","XL"] },
   { id: 10, name: "Set Floral SDA Club (remera + short)", cat: "Sets", img: "IMG_FLORAL", sizes: ["S","M","L","XL"] },
-  { id: 11, name: "Buzo Medio Cierre Gris", cat: "Buzos", img: "IMG_BUZOGRIS", sizes: ["S","M","L","XL"] }
+  { id: 11, name: "Buzo Medio Cierre Gris", cat: "Buzos", img: "IMG_BUZOGRIS", sizes: ["S","M","L","XL"] },
+  { id: 12, name: "Remera JolaBlack Strass", cat: "Remeras gráficas", img: "IMG_JOLABLACK", sizes: ["S","M","L","XL"] },
+  { id: 13, name: "Remera Blanca Strass", cat: "Remeras gráficas", img: "IMG_BLANCARHINESTONE", sizes: ["S","M","L","XL"] },
+  { id: 14, name: "Remera Santos Pecadores", cat: "Remeras gráficas", img: "IMG_SANTOSPECADORES", sizes: ["S","M","L","XL"] },
+  { id: 15, name: "Remera Sanistance", cat: "Remeras gráficas", img: "IMG_SANISTANCE", sizes: ["S","M","L","XL"] },
+  { id: 16, name: "Remera Corazón Alado Azul Marino", cat: "Remeras gráficas", img: "IMG_CORAZONMARINO", sizes: ["S","M","L","XL"] },
+  { id: 17, name: "Remera Corazón Alado Blanca", cat: "Remeras gráficas", img: "IMG_CORAZONBLANCO", sizes: ["S","M","L","XL"] }
 ];
 
 const IMAGES = {
@@ -27,6 +33,12 @@ const IMAGES = {
   IMG_BERMUDA: "images/bermuda-denim.jpg",
   IMG_FLORAL: "images/set-floral.jpg",
   IMG_BUZOGRIS: "images/buzo-medio-cierre.jpg",
+  IMG_JOLABLACK: "images/remera-jolablack.jpg",
+  IMG_BLANCARHINESTONE: "images/remera-blanca-rhinestone.jpg",
+  IMG_SANTOSPECADORES: "images/remera-santos-pecadores.jpg",
+  IMG_SANISTANCE: "images/remera-sanistance.jpg",
+  IMG_CORAZONMARINO: "images/remera-corazon-alado-marino.jpg",
+  IMG_CORAZONBLANCO: "images/remera-corazon-alado-blanco.jpg",
 };
 
 let cart = [];
@@ -35,13 +47,15 @@ const catGridMap = {
   "Camisetas retro": "grid-camisetas",
   "Jeans y bermudas": "grid-jeans",
   "Sets": "grid-sets",
-  "Buzos": "grid-buzos"
+  "Buzos": "grid-buzos",
+  "Remeras gráficas": "grid-graficas"
 };
 const catCountMap = {
   "Camisetas retro": "count-camisetas",
   "Jeans y bermudas": "count-jeans",
   "Sets": "count-sets",
-  "Buzos": "count-buzos"
+  "Buzos": "count-buzos",
+  "Remeras gráficas": "count-graficas"
 };
 const catCounts = {};
 
